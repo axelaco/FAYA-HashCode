@@ -17,3 +17,12 @@ rides = int(params[3])
 bonus = int(params[4])
 simu = int(params[5])
 
+cpt = 0
+res = dict()
+i = 1
+for line in lines:
+    if (cpt == vehicules):
+        cpt = 0
+    res.setdefault(cpt, []).append(i)
+
+
